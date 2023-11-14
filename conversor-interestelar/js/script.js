@@ -1,16 +1,11 @@
 function converter() {
-    var valor = document.getElementById("valor").value;
-    var temperatura = document.getElementById("temperatura").value;
-    var valorNovo = 0;
+  var distancia = document.getElementById("valor").value;
+  var anosLuzParaKm = 9460730777119.56;
+  var distanciaEmKm = distancia * anosLuzParaKm;
 
-    if (temperatura == "K") {
-      valorNovo = parseFloat(valor) + 273.15;
-    }
-    if (temperatura == "F") {
-      valorNovo = valor * (9 / 5) + 32;
-    }
-  
-    document.getElementById("resultado").innerHTML =
-      valor + " Cº equivalem a " + valorNovo.toFixed(2) + " " + temperatura;
-  }
-  
+  document.getElementById("resultado").innerHTML =
+    distancia +
+    " anos-luz são equivalente a " +
+    distanciaEmKm.toFixed(2) +
+    "km";
+}
