@@ -1,9 +1,10 @@
 function converter() {
     var valor = document.getElementById("valor").value;
     var temperatura = document.getElementById("temperatura").value;
-  
+    var valorNovo = 0;
+
     if (temperatura == "K") {
-      var valorNovo = valor + 273.15;
+      valorNovo = parseFloat(valor) + 273.15;
     }
     if (temperatura == "F") {
       valorNovo = valor * (9 / 5) + 32;
