@@ -3,47 +3,37 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Conversor de temperatura</title>
+  <link rel="stylesheet" href="css/styles.css">
 </head>
 <body>
-  
+  <div class="container">
+    <h1 class="page-title">
+      Conversor de temperatura
+    </h1>
+    <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
+  </div>
+  <a href="https://alura.com.br/" target="_blank">
+    <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
+    <img src="https://cdn-icons-png.flaticon.com/512/2100/2100100.png">
+  </a>
+
+  <div class='converter'>
+    <h1>Conversor de temperatura</h1>
+    <p>Insira a temperatura em Cº:</p>
+    <input type='number' id='valor' name='valor'>
+
+    <p>Selecione uma temperatura para conversão</p>
+
+    <select id='temperatura'>
+      <option value="K">Kelvin</option>
+      <option value="F">Fahrenheit</option>
+    </select>
+
+    <button onclick='converter()'>Converter</button>
+    <p id='resultado'></p>
+  </div>
+  <script src="js/script.js"></script>
+
 </body>
-</html>
-
-<html>
-    <head>
-        <div class="container">
-            <h1 class="page-title">
-              Conversor de temperatura
-            </h1>
-            <img src="https://www.alura.com.br/assets/img/imersoes/dev-2021/logo-imersao-aluraflix.svg" class="page-logo" alt="">
-          </div>
-          <a href="https://alura.com.br/" target="_blank">
-            <img src="https://www.alura.com.br/assets/img/home/alura-logo.svg" alt="" class="alura-logo">
-            <img src="https://cdn-icons-png.flaticon.com/512/2100/2100100.png">
-          </a>
-
-        <link rel="stylesheet" href="css/styles.css">
-
-    </head>
-    <body>
-        <div class='converter'>
-          <h1>Conversor de temperatura</h1>
-          <p>Insira a temperatura em Cº:</p>
-          <input type='number' id='valor' name='valor'>
-      
-          <p>Selecione uma temperatura para conversão</p>
-      
-          <select id='temperatura'>
-            <option value="K">Kelvin</option>
-            <option value="F">Fahrenheit</option>
-          </select>
-      
-          <button onclick='converter()'>Converter</button>
-          <p id='resultado'></p>
-        </div>
-      </body>
-
-    <script src="js/script.js"></script>
-
 </html>
